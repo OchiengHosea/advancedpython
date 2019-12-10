@@ -1,0 +1,4 @@
+[2016-05-08 11:08:18,651] INFO in ch09_r09: Sample Message One
+[2016-05-08 11:08:18,651] DEBUG in ch09_r09: Debugging
+[2016-05-08 11:08:18,652] WARNING in ch09_r09: Something might have
+gone wrong

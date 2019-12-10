@@ -3,8 +3,8 @@ tf.logging.set_verbosity(tf.logging.ERROR)
 import numpy as np
 
 # Trainign the first model
-
 # create features and labels
+
 celcius_q = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=float)
 fahrenhite_a = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=float)
 
