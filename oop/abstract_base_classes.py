@@ -1,5 +1,16 @@
+from abc import ABC, abstractmethod
+
+class Plugin(ABC):
+    @abstractmethod
+    def notify(self, event):
+        pass
+
+    @abstractmethod
+    def shutDown(self):
+        pass
+
 # these are like interfaces for Java
-class LoggingPlugin:
+class LoggingPlugin(Plugin):
     def notify(self, event):
         print(f'got {event}')
 
@@ -7,7 +18,7 @@ class LoggingPlugin:
         print(f'logger shutting down')
 
 
-class SecurityPlugin:
+class SecurityPlugin(Plugin):
     def notify(self, event):
         if event.action == 'login' and event.user == 'elliot':
             print(f'WARNING: {event.user} has logged iin')
